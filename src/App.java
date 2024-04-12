@@ -1,10 +1,12 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("정수를 입력하세요");
-        int sum=0;
-        
-        for(int i=0; i<5; i++){
-            int n=scanner
-        }
+        var foo=200;
+        var name ="google";
+
+        System.out.println(foo+name);
+        System.out.println("println");
+        System.out.println("println");
+        System.out.println("print");
+        System.out.println("print");
     }
 }

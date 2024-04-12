@@ -1,6 +1,6 @@
-import java.Scannaer;
-
+package chapter03;
 import java.util.Scanner;
+
 
 public class Ex3_13 {
     public static void main(String[] args){
@@ -15,7 +15,7 @@ public class Ex3_13 {
         try{
             System.out.println(dividend+"를"+divisor+"로 나누면 몫은"+dividend/divisor+"입니다.");
         }
-        catch(ArithneticExeption e)   {//ArithneticExeption 예외 처리 코드
+        catch(ArithmeticException e)   {//ArithneticExeption 예외 처리 코드
             System.out.println("0으로 나눌수 없습니다!");
         }
         finally{

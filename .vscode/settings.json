@@ -1,6 +1,11 @@
 {
     "java.project.sourcePaths": [
-        "src"
+        "src",
+        "src/chapter02",
+        "src/chapter03",
+        "src/chapter04",
+        "src/chapter05"
+        
 ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
