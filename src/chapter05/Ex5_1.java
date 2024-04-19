@@ -1,7 +1,6 @@
-package chapter05;
 
 public class Ex5_1 {
-public static void main(String[] args) {
+  public static void main(String[] args) {
     Point p =new Point();
     p.set(1, 2);
     p.showPoint();

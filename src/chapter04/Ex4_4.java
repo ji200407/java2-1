@@ -1,4 +1,3 @@
-package chapter04;
 public class Ex4_4 {
     String title;
     String author;

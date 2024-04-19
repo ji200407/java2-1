@@ -1,4 +1,4 @@
-package chapter05;
+
 public class Ex5_2 {
     public static void main(String[] args) {
         ColorPoin cp = new ColorPoin(5,6,"bule");
