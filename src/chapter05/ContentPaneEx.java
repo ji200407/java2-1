@@ -18,7 +18,7 @@ public class ContentPaneEx extends JFrame{
         setVisible(true);
         
     }
-    public static void min(Syring[] args){
+    public static void min(String[] args){
         new ContentPaneEx();
     }
     
