@@ -6,8 +6,8 @@ public class ContentPaneEx extends JFrame{
         setTitle("ContentPane과 JFame 예제");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        Container contenPane=getContentPane();
-        contentPane.setBachgriund(Color.ORANGE);
+        Container contentPane=getContentPane();
+        contentPane.setBackground(Color.ORANGE);
         contentPane.setLayout(new FlowLayout());
 
         contentPane.add(new JButton("OK"));

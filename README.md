@@ -1,5 +1,61 @@
 # 이지은 202330123
 
+## 5월 17일 강의
+
+### 대표 배치 관리자
+- FlowLayout 배치관리자: 
+   컴포넌트가 삽입 되는 순서대로 왼쪽에서 오른쪽으로 배치
+- BorderLayout 배치관리자:
+  컨테이너의 공간을 동 서 남북 중앙의 5개 영역으로 나눔
+- GridLayout 배치관리자:
+컨테이너를 프로그램에서 설정한 동일한 크기의 2차원 격자로 나눔
+- CardLayout 배치관리자:
+컨테이너 공간에서 카드를 쌓아 놓은 듯이 컴포넌트를 포개어 배치
+
+### 컨테이너에 새로운 배치관리자 설정
+- setLayout(layoutManager lm)메소드 호출
+- lm을 새로운 배치 관리자로 설정
+
+배치방법:컴포넌트를 컨테이너 내에 왼쪽에서 오른쪽으로 배치
+
+### flowlayout의 생성자
+ flowlayout()<br>
+ flowlayout(int align, int hgap, int vGap)<br>
+ align:컴포넌트를 정렬하는 방법 지정<br>
+ hGap:좌우 두 컴포넌트 사이의 수평 간격 픽셀 단위(디폴트:0)<br>
+ vGap:상하 컴포넌트 사이의 //배열<br>
+
+ ### borderlayout의 생성자
+   borderlayout(int hGap, int vGap)<br>
+   hGap:좌우 두 컴포넌트 사이의 수평 간격, 픽셀 단위(디폴트:0)<br>
+   vGap:상하 두 컴포넌트 사이의 수직 간격, 픽셀 단위(디폴트:0)<br>
+
+add() 메소드<br>
+ void add(Component comp,int index)<br>
+ comp:컴포넌트 index 위치에 삽입한다.<br>
+ index:컴포넌트의 위치<br>
+ < 동: BorderLavout.EAST 서:BorderLavout.WEST 남: BorderLavout.SOUTH 북:BorderLavout.NORTH 중앙:BorderLavout.CENTER >
+
+### GridLayout 생성자
+ GridLayout (int rows, int cols) <br>
+ GridLayout (int rows, int cols, int hGap, intvGap)<br>
+ rows: 격자의 행수 (디폴트:1)<br>
+ cols: 격자의 열수 (디폴트:1)<br>
+ hGap:좌우 두 컴포넌트 사이의 수평 간격, 픽셀 단위(디폴트:0)<br>
+ vGap:상하 두 컴포넌트 사이의 수직 간격, 픽셀 단위(디폴트:0)<br>
+ rows x cols 만큼의 셀을 가진 격자로 컨테이너 공간을 분할, 배치<br>
+
+ - 배치관리자 없는 컨테이너 필요한 경우<br>
+ 응용 프로그램에서 직접 컴포넌트의 크기와 위치를 결정하고자 하는 경우 
+ 1. 컴포넌트의 크기나 위치를 개발자 임의로 결정하고자 하는경우
+ 2. 게임 프로그램과 같이 시간이나 마우스 키보드의 입력에 따라 컴포넌트들의 위치와 크기가 수시로 변하는 경우
+ 3. 여러 컴포넌트들이 서로 겹쳐 출력하고 있음
+
+- 배치관리자가 없는 컨테이너에 컴포넌트를 삽입할때 
+프로그램에서 컴포넌트의 절대 크기와 위치 설정<br>
+컴포넌트들이 서로 겹치게 할 수 있음<br>
+
+
 ## 5월 3일 강의
 컬렉션: 요소 라고 불리는 가변 개수의 객체들의 저장소 , 고정 크기의 배열을 다루는 어려움 해소, 다양한 객체들의 삽이부 삭제,검색 등의 관리 용이
 
